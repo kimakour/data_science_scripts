@@ -1,0 +1,518 @@
+Activity.Therapeutic area,Project.Legal entity (Plant),Project.Responsibility,Project.Impact on patient,Project.R&D Priority,Activity.Number of patients,Activity.Number of sites,Activity.Nb of target countries,Activity.Duration,OUTPUT
+Neurology,JP01,SPEAR,false,false,50.0,20.0,1.0,3144960.0,120.72183899999999
+Others,BE11,Others,Direct impact on patients,false,600.0,40.0,1.0,2452320.0,47.44300000000001
+Neurology,JP01,SPEAR,Direct impact on patients,false,500.0,200.0,1.0,4019040.0,1.716
+Immunology,JP01,PVU Immunology,false,false,165.0,35.0,1.0,1524960.0,131.178529
+Neurology,JP01,SPEAR,Direct impact on patients,false,436.0,28.0,1.0,3047040.0,1.75
+Immunology,DE10,PVU Immunology,Direct impact on patients,false,736.0,99.0,14.0,2901600.0,2.0
+Neurology,JP01,SPEAR,false,false,274.0,100.0,2.0,3647520.0,15.725
+Neurology,US05,PVU Neurology,Direct impact on patients,false,25.0,1.0,1.0,2649600.0,21.325
+Neurology,BE11,PVU Neurology,Direct impact on patients,false,548.0,72.0,2.0,3712320.0,56.125
+Immunology,US05,PVU Immunology,Direct impact on patients,false,131.0,50.0,5.0,2728800.0,8.425
+Neurology,BE11,PVU Neurology,false,false,50.0,20.0,10.0,2446560.0,45.68
+Neurology,DE10,PVU Neurology,false,false,250.0,198.0,23.0,3287520.0,60.25
+Neurology,BE11,PVU Neurology,false,false,100.0,35.0,4.0,3078720.0,26.885
+Neurology,US05,PVU Neurology,Direct impact on patients,false,42.0,25.0,3.0,4030560.0,23.775
+Immunology,US05,PVU Immunology,false,false,18.0,35.0,4.0,3564000.0,17.425
+Neurology,US05,PVU Neurology,Direct impact on patients,false,767.0,195.0,17.0,3988800.0,101.85
+Neurology,Others,PVU Neurology,false,false,135.0,20.0,1.0,1740960.0,147.375
+Neurology,US05,PVU Neurology,Direct impact on patients,false,50.0,1.0,1.0,1199520.0,6.0
+Neurology,US05,PVU Neurology,Direct impact on patients,false,72.0,1.0,1.0,1306080.0,33.15
+Neurology,US05,PVU Neurology,Direct impact on patients,false,120.0,100.0,13.0,2298240.0,49.125
+Neurology,DE10,PVU Neurology,false,false,45.0,25.0,1.0,3414240.0,0.25
+Immunology,US05,PVU Immunology,Direct impact on patients,false,857.0,109.0,26.0,3872160.0,9.0
+Neurology,BE11,PVU Neurology,Direct impact on patients,false,12.0,1.0,1.0,3242880.0,4.8
+Neurology,JP01,SPEAR,false,false,60.0,1.0,1.0,997920.0,7.425
+Neurology,DE10,PVU Neurology,false,false,250.0,198.0,23.0,5228640.0,56.4
+Neurology,CN01,Others,Direct impact on patients,false,30.0,8.0,1.0,1392480.0,15.4
+Neurology,CN01,PVU Neurology,Direct impact on patients,false,888.0,241.0,29.0,7233120.0,233.05
+Others,CN01,Others,Direct impact on patients,false,240.0,11.0,1.0,2704320.0,13.15
+Neurology,US05,PVU Neurology,Direct impact on patients,false,1400.0,0.0,11.0,584640.0,1.0
+Neurology,US05,PVU Neurology,Direct impact on patients,false,50.0,20.0,6.0,2452320.0,49.35
+Immunology,US05,PVU Immunology,Direct impact on patients,false,595.0,206.0,29.0,4939200.0,8.0
+Immunology,BE11,PVU New Medicines,Direct impact on patients,Core,42.0,2.0,2.0,1251360.0,2.3
+Neurology,US05,PVU Neurology,Direct impact on patients,false,11.0,5.0,3.0,2340000.0,24.75
+Immunology,GB01,PVU New Medicines,Direct impact on patients,Core,390.0,131.0,20.0,7544160.0,14.0
+Neurology,US05,PVU Neurology,Direct impact on patients,false,853.0,154.0,26.0,7452000.0,73.325
+Neurology,Others,PVU Neurology,false,false,200.0,30.0,1.0,1467360.0,177.85
+Neurology,JP01,SPEAR,false,false,20.0,1.0,1.0,2106720.0,4.8
+Immunology,US05,PVU Immunology,Direct impact on patients,false,900.0,150.0,1.0,8375040.0,16.35
+Immunology,GB01,PVU New Medicines,Direct impact on patients,Core,420.0,240.0,23.0,7244640.0,2.0
+Immunology,US05,PVU Immunology,Direct impact on patients,false,36.0,6.0,3.0,2449440.0,64.625
+Neurology,CN01,PVU Neurology,Direct impact on patients,false,527.0,159.0,29.0,3401280.0,163.8
+Immunology,US05,PVU Immunology,Direct impact on patients,false,780.0,165.0,30.0,2571840.0,139.47
+Immunology,US05,PVU Immunology,false,false,160.0,40.0,4.0,2344320.0,9.5
+Neurology,US05,PVU Neurology,Direct impact on patients,false,100.0,31.0,6.0,1902240.0,20.225
+Immunology,US05,PVU Immunology,Direct impact on patients,false,582.0,70.0,13.0,3323520.0,1.6
+Neurology,CN01,PVU Neurology,Direct impact on patients,false,24.0,1.0,1.0,1336320.0,1.5
+Neurology,BE11,PVU Neurology,false,false,24.0,1.0,1.0,1055520.0,7.375
+Neurology,US05,PVU Neurology,Direct impact on patients,Core,300.0,50.0,12.0,2028960.0,163.01
+Immunology,US05,PVU Immunology,Direct impact on patients,false,780.0,165.0,30.0,2568960.0,251.37
+Neurology,CN01,PVU Neurology,Direct impact on patients,false,451.0,130.0,12.0,4563360.0,27.465
+Neurology,US05,PVU Neurology,Direct impact on patients,false,720.0,133.0,17.0,2391840.0,53.35
+Immunology,DE10,PVU Immunology,Direct impact on patients,false,42.0,1.0,1.0,1215360.0,4.1
+Immunology,DE10,PVU Immunology,Direct impact on patients,false,409.0,120.0,15.0,3974400.0,104.625
+Immunology,BE11,PVU Immunology,false,false,600.0,94.0,10.0,2170080.0,4.0
+Neurology,BE11,PVU Neurology,false,false,500.0,150.0,12.0,6547680.0,162.835
+Neurology,Others,PVU Neurology,false,false,500.0,65.0,1.0,2321280.0,51.5
+Immunology,US05,PVU Immunology,Direct impact on patients,false,29.0,11.0,1.0,3500640.0,3.0
+Neurology,BE11,PVU Neurology,false,false,124.0,47.0,1.0,3903840.0,4.375
+Neurology,US05,PVU Neurology,Direct impact on patients,false,656.0,160.0,13.0,3782880.0,173.855
+Immunology,BE11,PVU New Medicines,Direct impact on patients,Core,100.0,2.0,2.0,1128960.0,23.125
+Neurology,BE11,PVU New Medicines,false,false,48.0,1.0,1.0,1150560.0,10.0
+Immunology,US05,PVU Immunology,false,false,163.0,36.0,7.0,4678560.0,253.25
+Neurology,US05,PVU Neurology,Direct impact on patients,false,24.0,1.0,1.0,2082240.0,3.5
+Immunology,Others,Medical Affairs.1,Direct impact on patients,false,120.0,21.0,1.0,2247840.0,105.212
+Neurology,BE11,PVU Neurology,false,false,100.0,40.0,7.0,4720320.0,40.95
+Neurology,US05,PVU Neurology,Direct impact on patients,Core,665.0,25.0,12.0,3204000.0,244.4
+Neurology,US05,PVU Neurology,Direct impact on patients,false,650.0,180.0,20.0,2348640.0,29.4
+Neurology,CN01,Others,Direct impact on patients,false,840.0,125.0,5.0,5034240.0,0.375
+Neurology,BE11,PVU Neurology,Direct impact on patients,false,473.0,68.0,2.0,3651840.0,59.65
+Neurology,US05,PVU Neurology,Direct impact on patients,Core,700.0,69.0,5.0,2871360.0,5.0
+Neurology,US05,PVU Neurology,Direct impact on patients,false,108.0,58.0,12.0,3998880.0,70.44
+Neurology,US05,PVU Neurology,Direct impact on patients,false,300.0,91.0,12.0,5667840.0,115.7
+Immunology,US05,PVU Immunology,Direct impact on patients,false,203.0,44.0,11.0,3032640.0,5.1
+Neurology,BE11,Others,Direct impact on patients,false,60.0,10.0,5.0,1189440.0,0.75
+Neurology,CN01,PVU Neurology,Direct impact on patients,false,33.0,15.0,6.0,2096640.0,165.85
+Immunology,US05,PVU Immunology,Direct impact on patients,false,869.0,219.0,1.0,5227200.0,38.85
+Immunology,GB01,PVU New Medicines,false,false,24.0,1.0,1.0,2446560.0,4.0
+Immunology,BE11,PVU New Medicines,Direct impact on patients,Core,39.0,1.0,1.0,1455840.0,36.225
+Neurology,US05,PVU Neurology,Direct impact on patients,Core,400.0,100.0,6.0,1952640.0,166.975
+Immunology,US05,PVU Immunology,Direct impact on patients,false,402.0,128.0,20.0,5862240.0,70.6
+Neurology,CN01,SPEAR,Direct impact on patients,false,55.0,24.0,1.0,3438720.0,12.063
+Neurology,BE11,Others,Direct impact on patients,false,346.0,24.0,1.0,2916000.0,193.525
+Neurology,CN01,PVU Neurology,Direct impact on patients,false,322.0,130.0,12.0,3733920.0,75.915
+Neurology,DE10,PVU Neurology,false,false,45.0,25.0,1.0,2501280.0,12.375
+Immunology,US05,PVU Immunology,Direct impact on patients,false,500.0,100.0,14.0,4240800.0,1.1
+Immunology,BE11,PVU Immunology,false,false,435.0,81.0,9.0,1969920.0,5.0
+Immunology,DE10,PVU Immunology,Direct impact on patients,false,325.0,120.0,15.0,3641760.0,71.8
+Neurology,CN01,Medical Affairs.1,Direct impact on patients,false,200.0,10.0,1.0,1504800.0,3.25
+Immunology,US05,PVU Immunology,Direct impact on patients,false,900.0,130.0,15.0,7113600.0,410.15
+Neurology,DE10,PVU Neurology,false,false,24.0,15.0,1.0,2437920.0,53.675
+Neurology,CN01,Medical Affairs.1,Direct impact on patients,false,100.0,15.0,1.0,1828800.0,30.2
+Neurology,BE11,Others,Direct impact on patients,false,24.0,1.0,1.0,1598400.0,11.35
+Neurology,US05,PVU Neurology,Direct impact on patients,false,543.0,240.0,37.0,4256640.0,39.125
+Immunology,US05,Others,Direct impact on patients,false,125.0,40.0,3.0,1418400.0,26.475
+Immunology,US05,Others,Direct impact on patients,false,110.0,40.0,3.0,3379680.0,43.425
+Immunology,BE11,PVU Immunology,false,false,560.0,100.0,15.0,2034720.0,7.0
+Immunology,GB01,PVU New Medicines,Direct impact on patients,Core,16.0,6.0,2.0,2276640.0,14.075
+Neurology,US05,PVU Neurology,Direct impact on patients,false,300.0,155.0,31.0,2678400.0,128.575
+Immunology,US05,PVU Immunology,Direct impact on patients,false,1600.0,330.0,30.0,2744640.0,194.4
+Neurology,BE11,PVU Neurology,Direct impact on patients,false,24.0,1.0,1.0,1812960.0,4.7
+Neurology,US05,PVU Neurology,Direct impact on patients,Core,300.0,80.0,4.0,1795680.0,197.6
+Neurology,CN01,Medical Affairs.1,Direct impact on patients,false,72.0,12.0,1.0,2115360.0,62.035
+Immunology,GB01,PVU New Medicines,Direct impact on patients,Core,40.0,15.0,1.0,1861920.0,110.925
+Immunology,US05,PVU Immunology,Direct impact on patients,false,311.0,141.0,24.0,4993920.0,8.5
+Neurology,BE11,Others,Direct impact on patients,false,248.0,24.0,1.0,4212000.0,172.75
+Immunology,US05,Others,Direct impact on patients,false,220.0,90.0,3.0,2187360.0,72.955
+Neurology,US05,Medical Affairs.1,Direct impact on patients,false,50.0,2.0,1.0,2527200.0,19.4
+Neurology,US05,PVU Neurology,Direct impact on patients,false,50.0,50.0,6.0,2887200.0,86.625
+Immunology,US05,PVU Immunology,Direct impact on patients,false,800.0,120.0,7.0,2692800.0,446.7
+Neurology,DE10,PVU Neurology,false,false,90.0,15.0,1.0,2200320.0,64.075
+Neurology,US05,PVU Neurology,Direct impact on patients,false,668.0,99.0,6.0,5241600.0,66.85
+Immunology,US05,PVU Immunology,false,false,110.0,14.0,1.0,3588480.0,5.35
+Immunology,US05,PVU Immunology,false,false,36.0,1.0,1.0,3451680.0,0.3
+Immunology,US05,Others,Direct impact on patients,false,300.0,45.0,3.0,2064960.0,48.325
+Neurology,Others,Medical Affairs.1,false,false,350.0,45.0,1.0,2350080.0,63.665133999999995
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,100.0,80.0,15.0,3725280.0,236.141762
+Neurology,DE10,PVU Neurology,false,false,250.0,60.0,6.0,3900960.0,75.503065
+Neurology,DE10,Others,Others,false,530.0,48.0,10.0,2472480.0,19.555556
+Neurology,BE11,PVU New Medicines,Direct impact on patients,Platinum,200.0,40.0,1.0,2779200.0,192.35249
+Neurology,DE10,PVU Neurology,false,false,140.0,25.0,2.0,2707200.0,136.256705
+Immunology,GB01,PVU New Medicines,false,false,24.0,1.0,1.0,1114560.0,14.835249
+Neurology,BE11,PVU Neurology,false,false,60.0,50.0,10.0,1252800.0,64.56705
+Neurology,BE11,PVU Neurology,false,false,50.0,10.0,4.0,1252800.0,103.003831
+Immunology,BE11,PVU New Medicines,false,false,500.0,120.0,15.0,1416960.0,63.302682
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,800.0,200.0,20.0,4255200.0,278.877394
+Neurology,BE11,PVU Neurology,false,false,42.0,15.0,8.0,3283200.0,220.38927200000003
+Neurology,BE11,PVU Neurology,false,false,20.0,40.0,10.0,1252800.0,64.56705
+Others,Others,Medical Affairs.1,false,false,200.0,40.0,1.0,2629440.0,2.444444
+Neurology,US05,PVU Neurology,Direct impact on patients,false,250.0,50.0,50.0,5882400.0,120.57816100000001
+Neurology,BE11,PVU New Medicines,false,false,200.0,40.0,1.0,2001600.0,146.835249
+Immunology,GB01,PVU New Medicines,Direct impact on patients,Core,750.0,100.0,15.0,2024640.0,148.183908
+Neurology,BE11,Others,Others,false,600.0,180.0,3.0,1870560.0,34.896552
+Immunology,GB01,PVU New Medicines,Direct impact on patients,Core,1125.0,200.0,30.0,2005920.0,147.088122
+Neurology,US05,PVU Neurology,Direct impact on patients,false,103.0,40.0,5.0,2727360.0,54.85
+Neurology,BE11,PVU New Medicines,false,false,200.0,40.0,1.0,1735200.0,131.241379
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,400.0,100.0,15.0,4128480.0,103.04597700000001
+Neurology,BE11,PVU Neurology,false,false,38.0,1.0,1.0,806400.0,14.835249
+Neurology,BE11,Others,Others,false,600.0,24.0,1.0,1307520.0,53.123851
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,500.0,230.0,25.0,3445920.0,160.069348
+Neurology,BE11,PVU New Medicines,Direct impact on patients,Platinum,42.0,30.0,7.0,2738880.0,77.15
+Neurology,BE11,PVU Neurology,false,false,160.0,30.0,4.0,3160800.0,248.380612
+Neurology,CN01,PVU Neurology,Direct impact on patients,false,132.0,61.0,13.0,2063520.0,1.8122610000000001
+Immunology,BE11,PVU New Medicines,false,false,500.0,120.0,15.0,1205280.0,57.10728
+Neurology,US05,PVU Neurology,Direct impact on patients,false,244.0,140.0,29.0,3329280.0,176.47931
+Neurology,BE11,PVU Neurology,false,false,200.0,50.0,10.0,3346560.0,146.076628
+Neurology,BE11,PVU Neurology,false,false,250.0,50.0,1.0,7224480.0,363.819922
+Neurology,BE11,Others,Others,false,450.0,10.0,1.0,2262240.0,33.885057
+Neurology,BE11,PVU New Medicines,false,false,58.0,1.0,1.0,1192320.0,24.191571
+Others,Others,Medical Affairs.1,false,false,50.0,10.0,1.0,2623680.0,24.444444
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,200.0,40.0,15.0,2957760.0,202.804597
+Immunology,BE11,PVU Immunology,false,false,200.0,40.0,1.0,1252800.0,103.003831
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,1000.0,300.0,30.0,2972160.0,127.28773899999999
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,28.0,1.0,1.0,992160.0,24.0
+Immunology,DE10,PVU Immunology,Direct impact on patients,false,89.0,26.0,5.0,2034720.0,57.3
+Immunology,BE11,PVU Immunology,false,false,629.0,78.0,15.0,3080160.0,1.5
+Neurology,BE11,Others,Direct impact on patients,false,50.0,1.0,1.0,1346400.0,134.5
+Neurology,BE11,PVU New Medicines,false,false,24.0,1.0,1.0,924480.0,22.6875
+Immunology,US05,PVU Immunology,false,false,400.0,30.0,1.0,3600000.0,23.0
+Neurology,BE11,PVU New Medicines,false,false,200.0,50.0,20.0,5342400.0,0.8
+Neurology,BE11,PVU Neurology,false,false,200.0,40.0,1.0,1350720.0,47.53125
+Neurology,BE11,PVU New Medicines,false,false,24.0,1.0,1.0,1370880.0,22.875
+Neurology,BE11,PVU Neurology,false,false,504.0,45.0,6.0,2639520.0,1.6
+Immunology,GB01,PVU New Medicines,Direct impact on patients,Core,200.0,30.0,7.0,1549440.0,29.4
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,22.0,1.0,1.0,1236960.0,88.5
+Neurology,BE11,PVU New Medicines,false,false,200.0,40.0,1.0,1019520.0,1.0
+Immunology,BE11,PVU Immunology,false,false,36.0,1.0,1.0,1663200.0,77.0
+Others,BE11,PVU New Medicines,false,false,210.0,25.0,4.0,2221920.0,23.375
+Neurology,BE11,PVU New Medicines,Direct impact on patients,false,30.0,10.0,5.0,3424320.0,11.75
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,24.0,3.0,1.0,1149120.0,1.5
+Neurology,BE11,PVU New Medicines,false,false,276.0,50.0,10.0,2773440.0,184.0375
+Immunology,BE11,PVU New Medicines,Direct impact on patients,Core,24.0,1.0,1.0,946080.0,13.45
+Neurology,BE11,PVU New Medicines,false,false,28.0,1.0,1.0,1139040.0,31.175
+Immunology,BE11,PVU Immunology,false,false,195.0,38.0,6.0,2244960.0,82.25
+Neurology,BE11,PVU New Medicines,Direct impact on patients,Platinum,200.0,40.0,10.0,1648800.0,25.875
+Immunology,BE11,PVU New Medicines,Direct impact on patients,Core,24.0,1.0,1.0,1164960.0,0.6
+Immunology,GB01,PVU New Medicines,Direct impact on patients,Core,150.0,87.0,15.0,2672640.0,74.415
+Neurology,BE11,Others,false,false,200.0,200.0,6.0,1451520.0,1.15
+Neurology,BE11,PVU New Medicines,Direct impact on patients,Platinum,12.0,1.0,1.0,937440.0,95.25
+Immunology,BE11,PVU Immunology,false,false,1045.5,162.0,14.0,4099680.0,12.75
+Neurology,BE11,PVU New Medicines,false,false,16.0,10.0,1.0,2301120.0,32.3125
+Immunology,US05,PVU Immunology,false,false,320.0,30.0,1.0,3600000.0,15.1
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,12.0,1.0,1.0,1192320.0,27.0
+Neurology,BE11,PVU Neurology,false,false,200.0,40.0,1.0,3813120.0,21.28
+Immunology,BE11,PVU Immunology,false,false,240.0,99.0,14.0,2740320.0,1.55
+Immunology,BE11,PVU Immunology,false,false,490.0,90.0,11.0,2167200.0,1.8
+Immunology,BE11,PVU Immunology,false,false,743.0,83.0,11.0,2388960.0,5.15
+Immunology,BE11,PVU Immunology,false,false,1120.0,190.0,13.0,2943360.0,1.35
+Immunology,BE11,PVU Immunology,false,false,300.0,95.0,14.0,2741760.0,1.55
+Immunology,BE11,PVU Immunology,false,false,490.0,90.0,11.0,2193120.0,1.8
+Immunology,BE11,PVU Immunology,false,false,840.0,152.0,14.0,2645280.0,1.55
+Neurology,JP01,SPEAR,Direct impact on patients,false,340.0,15.0,1.0,2774880.0,219.59
+Neurology,JP01,SPEAR,Direct impact on patients,false,340.0,12.0,1.0,3327840.0,282.8625
+Neurology,CN01,Medical Affairs.1,Direct impact on patients,false,700.0,50.0,1.0,2574720.0,80.02
+Neurology,CN01,Medical Affairs.1,Direct impact on patients,false,700.0,30.0,1.0,2547360.0,61.89
+Neurology,JP01,SPEAR,false,false,700.0,30.0,1.0,2810880.0,129.46200000000002
+Neurology,JP01,SPEAR,Direct impact on patients,false,5.0,2.0,1.0,900000.0,4.634
+Neurology,CN01,Medical Affairs.1,Direct impact on patients,false,266.0,29.0,1.0,2083680.0,396.9845
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,400.0,200.0,19.0,3119040.0,18.23
+Neurology,BE11,PVU New Medicines,false,false,250.0,10.0,5.0,2639520.0,3.876
+Neurology,Others,Medical Affairs.1,Direct impact on patients,false,80.0,20.0,1.0,2462400.0,56.5
+Neurology,Others,Medical Affairs.1,Direct impact on patients,false,200.0,100.0,1.0,1909440.0,12.35
+Neurology,BE11,PVU Neurology,Direct impact on patients,false,40.0,4.0,1.0,1091520.0,11.04
+Immunology,US05,PVU Immunology,false,false,60.0,23.0,10.0,1478880.0,18.721
+Immunology,BE11,PVU Immunology,false,false,240.0,30.0,5.0,1605600.0,14.455
+Neurology,CN01,Medical Affairs.1,Direct impact on patients,false,74.0,15.0,1.0,2005920.0,15.35
+Immunology,Others,Medical Affairs.1,Direct impact on patients,false,150.0,20.0,1.0,1978560.0,20.125
+Neurology,DE10,Medical Affairs.1,Direct impact on patients,false,100.0,28.0,6.0,2512800.0,0.5
+Neurology,BE11,PVU New Medicines,Direct impact on patients,Platinum,34.0,24.0,10.0,2626560.0,10.545
+Immunology,US05,PVU Immunology,false,false,500.0,20.0,1.0,2556000.0,7.125
+Immunology,BE11,PVU Immunology,false,false,285.0,100.0,10.0,2077920.0,15.795
+Neurology,BE11,Others,Direct impact on patients,false,199.0,22.0,7.0,5135040.0,88.625
+Immunology,BE11,PVU Immunology,false,false,260.0,60.0,1.0,1830240.0,2.385
+Immunology,DE10,PVU Immunology,Direct impact on patients,false,300.0,85.0,10.0,2780640.0,17.985
+Immunology,US05,PVU Immunology,false,false,200.0,65.0,9.0,5497920.0,19.92
+Immunology,DE10,PVU Immunology,Direct impact on patients,false,100.0,1.0,1.0,1421280.0,4.5
+Immunology,US05,PVU Immunology,Direct impact on patients,false,3121.0,104.0,1.0,7068960.0,0.06
+Neurology,DE10,Others,Others,false,1500.0,100.0,8.0,2276640.0,2.07
+Immunology,BE11,PVU Immunology,false,false,285.0,53.0,10.0,3219840.0,11.84
+Neurology,CN01,SPEAR,Direct impact on patients,false,100.0,15.0,5.0,2121120.0,8.0
+Immunology,GB01,Medical Affairs.1,Direct impact on patients,false,187.0,25.0,1.0,3414240.0,10.0
+Immunology,Others,Medical Affairs.1,Direct impact on patients,false,1068.0,160.0,1.0,3800160.0,45.05
+Immunology,BE11,PVU Immunology,false,false,200.0,60.0,15.0,1834560.0,18.61
+Immunology,BE11,PVU Immunology,false,false,217.0,37.0,6.0,1556640.0,5.66
+Immunology,DE10,PVU Immunology,Direct impact on patients,false,160.0,35.0,4.0,3291840.0,7.0
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,25.0,6.0,4.0,1620000.0,2.625
+Neurology,BE11,PVU Neurology,false,false,40.0,20.0,1.0,1424160.0,8.35
+Neurology,JP01,SPEAR,false,false,76.0,80.0,1.0,3359520.0,1.9
+Neurology,JP01,SPEAR,Direct impact on patients,false,270.0,80.0,1.0,5921280.0,1.1
+Neurology,US05,PVU Neurology,Direct impact on patients,false,12.0,1.0,1.0,1501920.0,17.0
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,45.0,21.0,6.0,3098880.0,6.5
+Immunology,GB01,PVU New Medicines,Direct impact on patients,Core,24.0,1.0,1.0,943200.0,11.4
+Neurology,BE11,Medical Affairs.1,Direct impact on patients,false,100.0,10.0,1.0,2351520.0,4.895
+Immunology,BE11,Others,false,false,500.0,50.0,4.0,2194560.0,5.9
+Immunology,GB01,PVU New Medicines,Direct impact on patients,Core,6.0,5.0,4.0,2191680.0,1.8771490000000002
+Neurology,BE11,PVU Neurology,Direct impact on patients,false,20.0,3.0,1.0,1761120.0,1.8
+Neurology,BE11,PVU New Medicines,false,false,8.0,1.0,1.0,937440.0,0.5
+Immunology,DE10,PVU Immunology,Direct impact on patients,false,200.0,40.0,1.0,2099520.0,9.5
+Neurology,BE11,PVU Neurology,false,false,24.0,1.0,1.0,839520.0,61.1
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,33.0,2.0,1.0,3124800.0,19.0
+Immunology,BE11,PVU New Medicines,Direct impact on patients,Core,24.0,1.0,1.0,892800.0,114.45
+Neurology,BE11,PVU Neurology,false,false,10.0,8.0,1.0,1497600.0,7.1
+Neurology,BE11,PVU Neurology,false,false,12.0,1.0,1.0,2341440.0,1.9
+Immunology,US05,PVU Immunology,Direct impact on patients,false,20.0,6.0,1.0,2278080.0,24.65
+Immunology,US05,PVU Immunology,false,false,200.0,40.0,1.0,2018880.0,7.0
+Neurology,BE11,PVU Neurology,Direct impact on patients,false,30.0,1.0,1.0,3471840.0,19.0
+Immunology,US05,PVU Immunology,Direct impact on patients,false,20.0,6.0,1.0,2118240.0,26.225
+Neurology,JP01,SPEAR,Direct impact on patients,false,24.0,1.0,1.0,2239200.0,3.0
+Neurology,BE11,PVU New Medicines,false,false,40.0,1.0,1.0,1031040.0,33.8
+Immunology,BE11,PVU New Medicines,Direct impact on patients,Core,80.0,44.0,10.0,1440000.0,8.0
+Immunology,BE11,PVU Immunology,false,false,24.0,1.0,1.0,1202400.0,23.0
+Neurology,BE11,PVU Neurology,Direct impact on patients,false,30.0,1.0,1.0,3369600.0,8.5
+Neurology,JP01,SPEAR,false,false,82.0,30.0,1.0,2509920.0,35.6875
+Neurology,Others,Others,Others,false,600.0,30.0,1.0,2983680.0,8.1
+Neurology,JP01,SPEAR,Direct impact on patients,false,200.0,30.0,1.0,2818080.0,2.9
+Neurology,Others,Medical Affairs.1,Others,false,200.0,40.0,1.0,3268800.0,4.0
+Immunology,DE10,Medical Affairs.1,Direct impact on patients,false,1360.0,140.0,10.0,3961440.0,3.0
+Immunology,BE11,PVU New Medicines,false,false,90.0,1.0,1.0,1229760.0,8.4
+Immunology,US05,PVU Immunology,Direct impact on patients,false,200.0,1.0,1.0,5328000.0,1.47
+Immunology,GB01,PVU New Medicines,Direct impact on patients,Core,1008.0,260.0,30.0,2806560.0,0.05
+Immunology,US05,PVU Immunology,false,false,102.0,14.0,5.0,2286720.0,39.8
+Immunology,GB01,PVU New Medicines,false,false,46.0,2.0,2.0,1283040.0,157.775
+Immunology,BE11,PVU New Medicines,Direct impact on patients,Core,36.0,1.0,1.0,933120.0,0.5
+Immunology,DE10,PVU Immunology,false,false,559.0,70.0,9.0,2599200.0,7.95
+Immunology,US05,PVU Immunology,Direct impact on patients,false,20.0,12.0,4.0,1945440.0,4.6
+Immunology,US05,PVU Immunology,Direct impact on patients,false,16.0,12.0,4.0,1627200.0,4.85
+Immunology,GB01,PVU New Medicines,Direct impact on patients,Core,36.0,1.0,1.0,933120.0,21.25
+Immunology,GB01,PVU New Medicines,Direct impact on patients,Core,6.0,7.0,4.0,1490400.0,1.875
+Immunology,GB01,PVU New Medicines,Direct impact on patients,Core,57.0,1.0,1.0,1008000.0,28.575
+Neurology,BE11,PVU New Medicines,Direct impact on patients,false,8.0,1.0,1.0,927360.0,3.1
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,32.0,1.0,1.0,845280.0,0.2
+Immunology,US05,PVU Immunology,Direct impact on patients,false,15.0,10.0,5.0,1877760.0,149.31681
+Immunology,BE11,PVU New Medicines,Direct impact on patients,Core,24.0,1.0,1.0,779040.0,62.301724
+Neurology,BE11,PVU Neurology,false,false,12.0,1.0,1.0,1284480.0,43.114224
+Immunology,BE11,PVU Immunology,false,false,60.0,34.0,9.0,1755360.0,222.543079
+Immunology,US05,PVU Immunology,false,false,50.0,20.0,8.0,1169280.0,41.975
+Neurology,BE11,PVU New Medicines,Direct impact on patients,false,24.0,1.0,1.0,1296000.0,0.5
+Immunology,GB01,PVU New Medicines,false,false,36.0,1.0,1.0,2168640.0,5.59375
+Neurology,BE11,PVU New Medicines,false,false,8.0,1.0,1.0,813600.0,36.1875
+Neurology,BE11,PVU New Medicines,Direct impact on patients,Platinum,57.0,39.0,13.0,2144160.0,31.9
+Immunology,BE11,PVU New Medicines,Direct impact on patients,Core,40.0,8.0,4.0,1353600.0,215.869731
+Others,BE11,PVU New Medicines,Direct impact on patients,false,5.0,1.0,1.0,976320.0,17.375
+Immunology,US05,PVU Immunology,Direct impact on patients,false,24.0,1.0,1.0,2008800.0,0.25
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,40.0,1.0,1.0,915840.0,71.394636
+Neurology,BE11,PVU Neurology,false,false,24.0,1.0,1.0,915840.0,61.363985
+Immunology,BE11,PVU New Medicines,Direct impact on patients,false,24.0,1.0,1.0,976320.0,99.78125
+Immunology,BE11,PVU New Medicines,Direct impact on patients,false,24.0,1.0,1.0,849600.0,53.903486
+Immunology,DE10,PVU Immunology,false,false,10.0,1.0,1.0,1291680.0,3.25
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,24.0,1.0,1.0,959040.0,57.870929000000004
+Immunology,GB01,PVU New Medicines,false,false,28.0,1.0,1.0,1117440.0,69.53125
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,28.0,1.0,1.0,943200.0,57.318008
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,28.0,1.0,1.0,830880.0,49.90038300000001
+Neurology,US05,Others,false,false,200.0,40.0,1.0,1065600.0,0.625
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,50.0,1.0,1.0,1126080.0,76.03965500000002
+Neurology,BE11,PVU New Medicines,Direct impact on patients,false,18.0,1.0,1.0,864000.0,1.375
+Immunology,BE11,PVU New Medicines,Direct impact on patients,Core,56.0,1.0,1.0,1248480.0,64.988146
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,50.0,1.0,1.0,1039680.0,2.025
+Immunology,GB01,PVU New Medicines,Direct impact on patients,Core,20.0,10.0,6.0,1670400.0,30.6125
+Immunology,US05,PVU Immunology,Direct impact on patients,false,1048.0,230.0,7.0,1802880.0,3.875
+Immunology,BE11,PVU New Medicines,Direct impact on patients,Platinum,24.0,1.0,1.0,1143360.0,63.134099
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,24.0,2.0,1.0,1075680.0,95.013194
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,24.0,1.0,1.0,1064160.0,18.375
+Immunology,GB01,PVU New Medicines,Direct impact on patients,Core,90.0,17.0,5.0,2014560.0,165.98625
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,52.0,1.0,1.0,1033920.0,55.876197
+Immunology,BE11,PVU New Medicines,Direct impact on patients,Platinum,80.0,1.0,1.0,3432960.0,85.122845
+Immunology,GB01,PVU New Medicines,false,false,80.0,1.0,1.0,1323360.0,103.03125
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,28.0,1.0,1.0,879840.0,57.318008
+Neurology,BE11,PVU New Medicines,false,false,76.0,4.0,1.0,1537920.0,2.6375
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,28.0,2.0,2.0,989280.0,64.646911
+Immunology,GB01,PVU New Medicines,Direct impact on patients,Core,10.0,1.0,1.0,1981440.0,0.375
+Neurology,BE11,PVU New Medicines,Direct impact on patients,Platinum,36.0,1.0,1.0,1262880.0,125.95
+Neurology,BE11,PVU New Medicines,Direct impact on patients,Platinum,40.0,20.0,7.0,1304640.0,145.19156999999996
+Neurology,JP01,SPEAR,false,false,26.0,1.0,1.0,747360.0,1.375
+Neurology,BE11,PVU Neurology,false,false,36.0,1.0,1.0,855360.0,0.75
+Neurology,BE11,PVU New Medicines,false,false,24.0,1.0,1.0,840960.0,61.86973199999999
+Immunology,GB01,PVU New Medicines,false,false,24.0,1.0,1.0,1945440.0,246.13026800000003
+Immunology,BE11,PVU Immunology,false,false,43.0,9.0,4.0,1666080.0,6.574713
+Immunology,GB01,PVU New Medicines,Direct impact on patients,Core,20.0,1.0,1.0,947520.0,27.225
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,28.0,1.0,1.0,855360.0,43.679789
+Neurology,BE11,PVU Neurology,false,false,32.0,1.0,1.0,964800.0,45.49413300000001
+Neurology,US05,PVU Neurology,Direct impact on patients,false,52.0,1.0,1.0,1172160.0,52.175
+Immunology,BE11,PVU New Medicines,Direct impact on patients,Core,12.0,1.0,1.0,455040.0,48.1875
+Neurology,US05,PVU Neurology,Direct impact on patients,false,48.0,2.0,1.0,1031040.0,6.25
+Neurology,US05,PVU Neurology,Direct impact on patients,false,50.0,1.0,1.0,849600.0,32.0
+Neurology,JP01,SPEAR,Direct impact on patients,false,398.0,82.0,1.0,4021920.0,1.0
+Immunology,US05,Others,Direct impact on patients,false,20.0,1.0,2.0,967680.0,9.875
+Immunology,DE10,PVU Immunology,false,false,160.0,45.0,2.0,3103200.0,169.67816000000005
+Immunology,DE10,PVU Immunology,false,false,227.0,23.0,4.0,2406240.0,17.954023
+Neurology,BE11,PVU Neurology,Direct impact on patients,false,24.0,1.0,1.0,3180960.0,4.7
+Immunology,US05,PVU Immunology,Direct impact on patients,false,402.0,71.0,7.0,4475520.0,4.45
+Immunology,US05,PVU Immunology,Direct impact on patients,false,194.0,50.0,5.0,2473920.0,0.97
+Immunology,CN01,Medical Affairs.1,Direct impact on patients,false,150.0,10.0,1.0,3523680.0,13.8375
+Neurology,CN01,PVU Neurology,Direct impact on patients,false,14.0,13.0,1.0,2448000.0,39.8375
+Neurology,CN01,Medical Affairs.1,Direct impact on patients,false,200.0,40.0,4.0,3673440.0,10.5315
+Immunology,Others,Medical Affairs.1,Direct impact on patients,false,545.0,50.0,1.0,3320640.0,11.91875
+Neurology,US05,PVU Neurology,Direct impact on patients,false,1000.0,100.0,4.0,3160800.0,5.34375
+Neurology,JP01,Medical Affairs.1,false,false,3000.0,500.0,1.0,4034880.0,8.7
+Neurology,CN01,Medical Affairs.1,Direct impact on patients,false,150.0,75.0,1.0,1823040.0,31.5
+Immunology,Others,Medical Affairs.1,Direct impact on patients,false,700.0,200.0,1.0,3061440.0,8.925
+Neurology,DE10,Medical Affairs.1,Direct impact on patients,false,374.0,50.0,2.0,2282400.0,44.681
+Neurology,Others,Medical Affairs.1,Direct impact on patients,false,492.0,0.0,1.0,4962240.0,4.80625
+Neurology,BE11,PVU New Medicines,Direct impact on patients,false,200.0,40.0,1.0,2105280.0,7.044
+Neurology,BE11,Medical Affairs.1,Direct impact on patients,false,200.0,40.0,1.0,2155680.0,63.0705
+Neurology,BE11,PVU Neurology,Direct impact on patients,false,9.0,5.0,1.0,2502720.0,1.0
+Neurology,Others,Medical Affairs.1,Direct impact on patients,false,200.0,40.0,1.0,969120.0,22.8
+Immunology,Others,Medical Affairs.1,Direct impact on patients,false,540.0,8.0,1.0,1268640.0,2.0
+Neurology,CN01,Medical Affairs.1,Direct impact on patients,false,1082.0,40.0,1.0,2615040.0,3.28125
+Immunology,GB01,PVU New Medicines,false,false,24.0,1.0,1.0,2947680.0,1.375
+Neurology,CN01,Medical Affairs.1,Direct impact on patients,false,200.0,40.0,1.0,2946240.0,15.84375
+Neurology,JP01,SPEAR,Direct impact on patients,false,200.0,200.0,1.0,9745920.0,40.95
+Neurology,US05,PVU Neurology,Direct impact on patients,Core,33.187773,4.31441,11.0,4860000.0,40.8445
+Neurology,Others,Medical Affairs.1,Direct impact on patients,false,550.0,150.0,1.0,2499840.0,9.95675
+Neurology,DE10,Medical Affairs.1,Direct impact on patients,false,188.0,20.0,1.0,2233440.0,11.83125
+Neurology,JP01,Medical Affairs.1,false,false,300.0,100.0,1.0,3422880.0,2.5
+Immunology,US05,PVU Immunology,false,false,2000.0,1.0,1.0,3725280.0,0.6875
+Neurology,DE10,Medical Affairs.1,Direct impact on patients,false,400.0,40.0,5.0,1117440.0,29.405
+Neurology,CN01,PVU Neurology,Direct impact on patients,false,106.0,47.0,15.0,2643840.0,79.26475
+Neurology,US05,PVU Neurology,Direct impact on patients,false,15.0,3.0,1.0,1876320.0,1.9375
+Immunology,Others,Medical Affairs.1,Direct impact on patients,false,120.0,55.0,2.0,2678400.0,7.90625
+Neurology,BE11,Others,Direct impact on patients,false,50.0,30.0,5.0,1127520.0,0.5
+Immunology,US05,PVU Immunology,Direct impact on patients,false,500.0,20.0,20.0,3093120.0,89.2375
+Immunology,Others,Medical Affairs.1,Direct impact on patients,false,200.0,40.0,2.0,2363040.0,9.0
+Immunology,US05,PVU Immunology,false,false,1000.0,1.0,1.0,4658400.0,29.40625
+Neurology,DE10,PVU Neurology,false,false,14.0,1.0,1.0,1497600.0,2.25
+Immunology,BE11,Medical Affairs.1,Direct impact on patients,false,678.0,104.0,5.0,2237760.0,71.3425
+Neurology,Others,Medical Affairs.1,Direct impact on patients,false,1000.0,65.0,1.0,3263040.0,2.625
+Neurology,US05,PVU Neurology,Direct impact on patients,false,50.0,15.0,1.0,845280.0,17.1
+Immunology,US05,PVU Immunology,false,false,175.0,85.0,15.0,5480640.0,229.819923
+Immunology,US05,PVU Immunology,false,false,126.0,12.0,1.0,3441600.0,2.459
+Immunology,US05,PVU Immunology,false,false,2000.0,1.0,1.0,3859200.0,1.875
+Immunology,Others,Medical Affairs.1,Direct impact on patients,false,0.0,0.0,1.0,5302080.0,12.222222
+Neurology,CN01,Medical Affairs.1,Direct impact on patients,false,250.0,10.0,1.0,2720160.0,5.65
+Immunology,US05,PVU Immunology,false,false,200.0,40.0,1.0,1252800.0,78.475096
+Immunology,DE10,PVU Immunology,Direct impact on patients,false,40.0,6.0,1.0,3507840.0,49.0
+Immunology,US05,PVU Immunology,Direct impact on patients,false,200.0,70.0,3.0,3108960.0,3.625
+Immunology,US05,PVU Immunology,false,false,150.0,50.0,15.0,2831040.0,110.75862
+Neurology,Others,Medical Affairs.1,Direct impact on patients,false,727.0,148.0,1.0,2525760.0,11.15
+Immunology,US05,PVU Immunology,Direct impact on patients,false,780.0,150.0,3.0,2645280.0,76.072797
+Immunology,US05,PVU Immunology,Direct impact on patients,false,780.0,150.0,3.0,1887840.0,53.735631999999995
+Neurology,BE11,PVU Neurology,false,false,200.0,40.0,1.0,1641600.0,35.570881
+Immunology,BE11,PVU Immunology,false,false,100.0,90.0,4.0,1857600.0,1.15
+Immunology,BE11,PVU Immunology,false,false,390.0,124.0,10.0,2476800.0,7.41
+Immunology,GB01,PVU New Medicines,false,false,30.0,20.0,8.0,1205280.0,3.197674
+Immunology,GB01,PVU New Medicines,Direct impact on patients,Core,160.0,70.0,8.0,1563840.0,5.0
+Immunology,BE11,PVU Immunology,false,false,1080.0,150.0,20.0,2069280.0,21.123372
+Neurology,BE11,PVU New Medicines,false,false,200.0,40.0,1.0,4404960.0,21.839847
+Immunology,US05,PVU Immunology,false,false,1000.0,250.0,20.0,1843200.0,12.829119
+Immunology,GB01,PVU New Medicines,false,false,200.0,40.0,1.0,3522240.0,19.31954
+Neurology,BE11,PVU New Medicines,false,false,116.0,100.0,20.0,1275840.0,11.632184
+Immunology,BE11,PVU New Medicines,Direct impact on patients,false,800.0,130.0,18.0,4314240.0,20.870498
+Neurology,BE11,PVU Neurology,false,false,36.0,1.0,1.0,1015200.0,3.54023
+Others,BE11,PVU New Medicines,false,false,24.0,1.0,1.0,849600.0,3.051341
+Immunology,US05,PVU Immunology,false,false,1500.0,500.0,20.0,2201760.0,18.358621
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,28.0,1.0,1.0,851040.0,3.177778
+Neurology,BE11,PVU New Medicines,false,false,24.0,1.0,1.0,849600.0,3.7256699999999996
+Neurology,BE11,PVU Neurology,false,false,200.0,40.0,1.0,2244960.0,21.291954
+Immunology,US05,PVU Immunology,false,false,135.0,80.0,12.0,1761120.0,5.116475
+Neurology,US05,PVU Neurology,Direct impact on patients,false,36.0,7.0,3.0,1579680.0,6.79387
+Immunology,BE11,PVU New Medicines,Direct impact on patients,Focused,24.0,1.0,1.0,849600.0,3.7256699999999996
+Neurology,BE11,PVU Neurology,false,false,85.0,40.0,1.0,3041280.0,14.451723999999999
+Neurology,US05,PVU Neurology,false,false,200.0,40.0,1.0,1123200.0,1.896552
+Immunology,GB01,PVU New Medicines,Direct impact on patients,Core,450.0,99.0,23.0,1686240.0,17.625287
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,500.0,100.0,25.0,2206080.0,13.874329000000001
+Neurology,BE11,PVU New Medicines,Direct impact on patients,Platinum,200.0,40.0,1.0,1051200.0,4.8551720000000005
+Neurology,US05,PVU Neurology,Direct impact on patients,false,75.0,40.0,1.0,1612800.0,16.032184
+Immunology,US05,PVU Immunology,false,false,40.0,40.0,6.0,3327840.0,12.036782
+Neurology,JP01,Medical Affairs.1,false,false,300.0,100.0,1.0,3595680.0,6.928736
+Immunology,US05,PVU Immunology,false,false,200.0,40.0,1.0,1287360.0,5.141762
+Immunology,BE11,PVU New Medicines,Direct impact on patients,Platinum,200.0,40.0,1.0,1065600.0,4.695019
+Others,BE11,PVU New Medicines,false,false,24.0,1.0,1.0,835200.0,3.042912
+Immunology,BE11,PVU New Medicines,Direct impact on patients,Focused,24.0,1.0,1.0,1097280.0,7.6873559999999985
+Neurology,JP01,Medical Affairs.1,false,false,150.0,75.0,1.0,3337920.0,11.168582
+Others,BE11,PVU New Medicines,false,false,24.0,1.0,1.0,849600.0,3.7256699999999996
+Others,BE11,Others,Direct impact on patients,false,24.0,2.0,1.0,2093760.0,7.013027
+Neurology,BE11,PVU Neurology,false,false,16.0,1.0,1.0,849600.0,3.7256699999999996
+Immunology,US05,PVU Immunology,false,false,200.0,40.0,1.0,1624320.0,7.485057
+Immunology,BE11,PVU New Medicines,Direct impact on patients,Platinum,24.0,1.0,1.0,964800.0,4.11341
+Immunology,GB01,PVU New Medicines,false,false,200.0,40.0,1.0,1252800.0,6.035248999999999
+Immunology,BE11,Others,false,false,200.0,40.0,1.0,2244960.0,4.374713
+Immunology,BE11,Others,false,false,135.0,415.0,9.0,1350720.0,0.741762
+Immunology,GB01,PVU New Medicines,false,false,200.0,40.0,1.0,1327680.0,6.4735629999999995
+Immunology,BE11,PVU Immunology,false,false,24.0,1.0,1.0,1775520.0,1.6268200000000002
+Immunology,DE10,PVU Immunology,false,false,130.0,50.0,8.0,1880640.0,17.827586
+Neurology,BE11,PVU Neurology,false,false,100.0,50.0,20.0,2419200.0,24.908046
+Immunology,GB01,PVU New Medicines,Direct impact on patients,Core,200.0,80.0,15.0,3041280.0,32.502682
+Immunology,GB01,PVU New Medicines,Direct impact on patients,Core,195.0,70.0,10.0,1581120.0,7.9570880000000015
+Immunology,BE11,PVU New Medicines,Direct impact on patients,false,400.0,70.0,5.0,3725280.0,36.582375
+Immunology,GB01,PVU New Medicines,false,false,200.0,40.0,1.0,4423680.0,24.090421
+Immunology,GB01,PVU New Medicines,Direct impact on patients,Core,24.0,1.0,1.0,885600.0,2.132567
+Immunology,BE11,PVU Immunology,false,false,850.0,140.0,12.0,2556000.0,26.821456
+Immunology,DE10,PVU Immunology,false,false,22.0,6.0,3.0,1516320.0,7.729502
+Immunology,US05,PVU Immunology,false,false,180.0,80.0,12.0,1543680.0,3.9701150000000003
+Immunology,BE11,PVU New Medicines,Direct impact on patients,false,300.0,40.0,1.0,3846240.0,34.281226000000004
+Neurology,BE11,PVU Neurology,false,false,200.0,40.0,21.0,1755360.0,8.572414
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,24.0,3.0,3.0,977760.0,4.349425
+Immunology,GB01,PVU New Medicines,false,false,24.0,1.0,1.0,1123200.0,5.327203
+Immunology,GB01,PVU New Medicines,false,false,27.0,3.0,2.0,843840.0,2.469732
+Others,BE11,PVU New Medicines,false,false,200.0,40.0,1.0,1252800.0,0.261303
+Immunology,BE11,PVU New Medicines,Direct impact on patients,Focused,200.0,40.0,1.0,1252800.0,6.035248999999999
+Immunology,GB01,PVU New Medicines,false,false,200.0,40.0,1.0,1533600.0,7.6789270000000025
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,200.0,40.0,5.0,1563840.0,7.721073
+Immunology,DE10,PVU Immunology,false,false,200.0,40.0,1.0,3660480.0,15.661303
+Immunology,GB01,PVU New Medicines,false,false,200.0,40.0,1.0,3219840.0,17.549425
+Immunology,BE11,PVU New Medicines,false,false,200.0,40.0,1.0,1396800.0,3.0260540000000002
+Immunology,BE11,PVU New Medicines,false,false,24.0,1.0,1.0,907200.0,2.44023
+Immunology,JP01,Medical Affairs.1,false,false,200.0,40.0,1.0,2905920.0,6.199617
+Immunology,GB01,PVU New Medicines,Direct impact on patients,Core,24.0,1.0,1.0,1094400.0,5.158621
+Immunology,BE11,PVU Immunology,false,false,1050.0,200.0,15.0,3968640.0,20.592337
+Neurology,BE11,PVU New Medicines,false,false,200.0,40.0,10.0,2203200.0,22.691188
+Immunology,GB01,PVU New Medicines,false,false,200.0,40.0,1.0,4281120.0,23.761685999999997
+Others,BE11,PVU New Medicines,false,false,24.0,1.0,1.0,1671840.0,13.048276
+Immunology,GB01,PVU New Medicines,Direct impact on patients,Core,50.0,30.0,10.0,3231360.0,34.727969
+Neurology,BE11,PVU New Medicines,Direct impact on patients,Platinum,200.0,40.0,1.0,1080000.0,6.962452000000001
+Immunology,BE11,PVU Immunology,false,false,200.0,40.0,1.0,1971360.0,11.564751
+Neurology,JP01,Medical Affairs.1,false,false,100.0,50.0,1.0,3800160.0,12.504598
+Neurology,BE11,PVU New Medicines,false,false,100.0,40.0,6.0,1355040.0,12.348659
+Immunology,BE11,PVU New Medicines,Direct impact on patients,Platinum,24.0,1.0,1.0,758880.0,2.908046
+Neurology,BE11,PVU Neurology,false,false,200.0,40.0,1.0,2583360.0,27.495784999999998
+Neurology,BE11,PVU New Medicines,false,false,200.0,40.0,8.0,1461600.0,3.809962
+Immunology,GB01,PVU New Medicines,Direct impact on patients,Core,260.0,70.0,10.0,1628640.0,8.235249000000001
+Immunology,GB01,PVU New Medicines,Direct impact on patients,Core,200.0,40.0,1.0,1764000.0,5.950958
+Immunology,BE11,PVU New Medicines,false,false,60.0,25.0,10.0,1160640.0,5.044828
+Neurology,BE11,PVU Neurology,false,false,75.0,50.0,15.0,1375200.0,7.088889
+Neurology,JP01,SPEAR,Direct impact on patients,false,300.0,100.0,1.0,5544000.0,0.598467
+Immunology,BE11,PVU New Medicines,false,false,300.0,80.0,10.0,1175040.0,5.129119
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,100.0,40.0,8.0,1189440.0,5.698084
+Neurology,BE11,PVU Neurology,Direct impact on patients,Focused,100.0,40.0,8.0,2903040.0,15.842529
+Immunology,US05,PVU Immunology,false,false,300.0,10.0,10.0,3068640.0,14.380076999999998
+Immunology,GB01,PVU New Medicines,Direct impact on patients,Core,80.0,8.0,1.0,1622880.0,3.477011
+Immunology,BE11,PVU Immunology,false,false,180.0,40.0,2.0,1398240.0,8.395402
+Neurology,US05,PVU Neurology,Direct impact on patients,false,100.0,50.0,1.0,2136960.0,21.831418
+Immunology,GB01,PVU New Medicines,false,false,200.0,40.0,1.0,2030400.0,14.026054
+Immunology,BE11,PVU New Medicines,Direct impact on patients,false,100.0,40.0,1.0,2124000.0,11.19387
+Immunology,BE11,PVU New Medicines,false,false,1000.0,120.0,25.0,2701440.0,26.787739000000002
+Immunology,BE11,PVU Immunology,false,false,400.0,40.0,1.0,2393280.0,5.006897
+Others,CN01,Others,Direct impact on patients,false,40.0,1.0,1.0,878400.0,1.833333
+Others,Others,Medical Affairs.1,false,false,500.0,40.0,1.0,898560.0,2.781609
+Immunology,BE11,PVU New Medicines,Direct impact on patients,false,24.0,1.0,1.0,829440.0,3.7256699999999996
+Neurology,JP01,SPEAR,false,false,15.0,40.0,1.0,2391840.0,21.25
+Neurology,JP01,SPEAR,Direct impact on patients,false,3000.0,600.0,1.0,5544000.0,6.869732000000001
+Neurology,JP01,SPEAR,false,false,25.0,5.0,1.0,1399680.0,0.125
+Immunology,DE10,PVU Immunology,false,false,541.0,50.0,10.0,3297600.0,6.41908
+Immunology,US05,PVU Immunology,Direct impact on patients,false,150.0,40.0,1.0,1707840.0,6.16705
+Immunology,DE10,PVU Immunology,false,false,400.0,50.0,10.0,1641600.0,0.56129
+Immunology,US05,PVU Immunology,Direct impact on patients,false,150.0,40.0,1.0,2557440.0,16.292107
+Immunology,Others,Medical Affairs.1,false,false,200.0,40.0,1.0,1782720.0,24.444444
+Immunology,US05,PVU Immunology,Direct impact on patients,false,800.0,2.0,2.0,908640.0,25.9
+Immunology,DE10,PVU Immunology,false,false,234.0,30.0,5.0,2259360.0,309.95
+Neurology,CN01,Others,Direct impact on patients,false,561.0,56.0,1.0,6494400.0,1.0
+Immunology,JP01,Medical Affairs.1,Direct impact on patients,false,3000.0,600.0,1.0,4076640.0,1.35
+Neurology,CN01,Medical Affairs.1,Direct impact on patients,false,400.0,80.0,1.0,2727360.0,24.6875
+Immunology,JP01,Medical Affairs.1,Direct impact on patients,false,500.0,100.0,1.0,4093920.0,16.373635999999998
+Neurology,US05,PVU Neurology,false,false,125.0,5.0,1.0,1185120.0,103.839286
+Immunology,US05,PVU Immunology,Direct impact on patients,false,40.0,7.0,2.0,1234080.0,6.363
+Neurology,CN01,Medical Affairs.1,Direct impact on patients,false,14.0,3.0,1.0,4102560.0,7.417624000000001
+Immunology,Others,Medical Affairs.1,Direct impact on patients,false,200.0,10.0,1.0,1703520.0,7.0
+Neurology,US05,PVU Neurology,Direct impact on patients,false,32.0,6.0,1.0,2131200.0,68.7
+Neurology,BE11,Others,false,false,50.0,40.0,5.0,1566720.0,51.625645
+Immunology,Others,PVU Immunology,false,false,780.0,130.0,2.0,1562400.0,1.4521030000000001
+Immunology,Others,Medical Affairs.1,Direct impact on patients,false,100.0,18.0,1.0,2459520.0,18.725
+Immunology,JP01,Medical Affairs.1,Direct impact on patients,false,350.0,70.0,1.0,3708000.0,0.3
+Neurology,CN01,Medical Affairs.1,Direct impact on patients,false,350.0,160.0,2.0,2273760.0,2.687
+Neurology,JP01,SPEAR,Direct impact on patients,false,20.0,5.0,1.0,1257120.0,0.875
+Immunology,US05,PVU Immunology,false,false,222.0,65.0,1.0,3991680.0,4.5
+Immunology,US05,PVU Immunology,Direct impact on patients,false,220.0,50.0,1.0,2170080.0,5.875
+Immunology,DE10,PVU Immunology,false,false,322.0,50.0,10.0,1774080.0,1.0
+Neurology,US05,PVU Neurology,Direct impact on patients,Core,298.03671,0.0,1.0,247680.0,5.185
+Neurology,DE10,PVU Neurology,false,false,24.0,1.0,1.0,345600.0,10.5005
+Neurology,CN01,PVU Neurology,Direct impact on patients,false,628.0,100.0,1.0,3404160.0,1.5
+Neurology,BE11,PVU New Medicines,Direct impact on patients,false,24.0,1.0,1.0,1010880.0,3.2960000000000003
+Others,BE11,PVU New Medicines,false,false,200.0,40.0,1.0,2122560.0,147.17241299999995
+Immunology,US05,PVU Immunology,Direct impact on patients,false,335.0,70.0,3.0,3120480.0,0.25
+Neurology,CN01,PVU Neurology,Direct impact on patients,false,4.0,1.0,1.0,4383360.0,0.5
+Neurology,CN01,Others,Direct impact on patients,false,11.0,2.0,1.0,4078080.0,15.636014999999999
+Immunology,US05,PVU Immunology,false,false,130.0,62.0,1.0,3628800.0,13.726
+Immunology,US05,PVU Immunology,false,false,50.0,52.0,1.0,2171520.0,1.1
+Neurology,JP01,SPEAR,Direct impact on patients,false,300.0,1.0,1.0,9745920.0,3.0
+Neurology,JP01,SPEAR,Direct impact on patients,false,300.0,40.0,1.0,5544000.0,0.063
