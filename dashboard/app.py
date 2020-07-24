@@ -779,7 +779,7 @@ def plot_scatter(x_data, y_data, x_radio, y_radio, slider2):
             y=y_data,
             marginal_x=x_radio,
             marginal_y=y_radio,
-            color="OUTPUT",
+            color="Width",
             log_x=False,
             title=" Scatter plot",
         )
