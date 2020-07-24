@@ -12,7 +12,7 @@ contains two files :
 - compute Population stability index (PSI) value 
 <img src="https://latex.codecogs.com/gif.latex?PSI(P,Q)=D_{KL}(P||Q)+D_{KL}(Q||P)" />
 
--plot PSI values over a dataset
+- plot PSI values over a dataset
 
 
 ### psi_grouping.py
