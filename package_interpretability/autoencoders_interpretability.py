@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 from keras.models import Model, clone_model
-from keras.layers import  Dense
+from keras.layers import Dense
 
 import plotly.graph_objects as go
 import shap
@@ -13,6 +13,16 @@ import shap
 def create_one_dimensional_network(
     model, feature_number, final_activation="linear"
 ):
+    """ 
+    create a one dimensional model based on the feature we want to reconstruct
+    It keeps the neuron related to this feature only in the last layer
+    Arguments:
+    model : keras model 
+    feature_number : the feature order number ; from 0 to number_features-1
+    final_activation = depends on the activation of the last layer, default = "linear"
+    Returns: 
+    keras model 
+    """
     cloned_model = clone_model(model)
     cloned_model.set_weights(model.get_weights())
     len_weights = len(model.get_weights())
@@ -84,6 +94,19 @@ def compute_all_shap_values(X_train_scaled, X_test_scaled, model):
 
 
 def spot_indexes_anomalies(X_true, autoencoder, threshold):
+    """
+    Creates a dictionnary containing the reconstruction of X_true and the indexes
+    of anomalies in the data set
+    Arguments:
+    X_true : the data set we want to reconstruct
+    autoencoder : the autoencoder , a keras model 
+    threshold : the minimum value of MSE to differentiate between anomalies and normal instances
+    Returnes :
+    A dictionnary that has as a key :
+    "X_pred" : the predictions
+    "anomaly_indexes" : list of indexes of anomalies
+
+    """
     dictionnary_anomaly = dict()
     X_pred = pd.DataFrame(autoencoder.predict(X_true), columns=X_true.columns)
     X_pred.index = X_true.index
@@ -104,6 +127,18 @@ def explain_anomaly(
     frac=0.01,
     final_activation="linear",
 ):
+    """
+    returns a dictionnary containing the features that led to badly reconstruct the input
+    ( see research paper )
+    Arguments : 
+    X_true : real input
+    X_pred : prediction 
+    loc_anomaly : index of the anomaly 
+    threshold : the minimum value of MSE to differentiate between anomalies and normal instances
+    autoencdoer: keras model
+    frac : the fraction of the X_train to use to construct the kernel explainer
+    final_activation : final activation of the keras model (last layer )
+    """
     dictionnary_explanations = dict()
     list_columns = X_true.columns
 
@@ -150,6 +185,9 @@ def explain_anomaly(
 
 
 def plot_anomaly_importance(X_train, dictionnary, loc_anomaly):
+    """
+    plot the features that are important in constructing badly each feature
+    """
     plot = []
     for key in dictionnary.keys():
         for i in dictionnary[key]:
@@ -171,6 +209,10 @@ def choose_anomaly_randomly(
     frac=0.01,
     final_activation="linear",
 ):
+    """
+    Example of an anomaly explanation 
+    """
+
     dictionnary_anomaly = spot_indexes_anomalies(
         X_train_scaled, autoencoder, threshold
     )
