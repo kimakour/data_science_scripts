@@ -7,304 +7,90 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
 from sklearn.model_selection import train_test_split
-from sklearn.model_selection import cross_val_score
-from sklearn.model_selection import KFold
-from sklearn.pipeline import Pipeline
-from sklearn.linear_model import LinearRegression
-from numpy import mean
-from numpy import absolute
-from scipy.integrate import simps
-import shap
-from sklearn.ensemble import GradientBoostingRegressor
 
+from func_dash.func_dash import (
+    create_dcc,
+    create_slider,
+    create_radio_shape,
+    re_order_dataset,
+    create_dataframe_results,
+    create_values_pie_chart,
+    create_REC_plot,
+    create_explainer,
+)
+from func_dash.init_fig_dash import (
+    fig_1,
+    fig_2,
+    fig_3,
+    fig_4,
+    fig_5,
+    fig_6,
+    fig_7,
+    fig_8,
+    fig_9,
+)
+
+# initialize the app
 app = dash.Dash(__name__)
 
-################################################# Functions #########
-def REC(y_true, y_pred, min_Range, max_Range, Interval_Size):
-    Accuracy = []
-    Epsilon = np.arange(min_Range, max_Range, Interval_Size)
-    for i in range(len(Epsilon)):
-        count = 0.0
-        for j in range(len(y_true)):
-            if np.abs(y_true[j] - y_pred[j]) < Epsilon[i]:
-                count = count + 1
-        Accuracy.append(count / len(y_true))
-    AUC = simps(Accuracy, Epsilon) / max_Range
-    return Epsilon, Accuracy, AUC
 
-
-def intervals(x):
-    if x < 0.1:
-        return "absolute error < 0.1 "
-    elif x >= 0.1 and x < 0.5:
-        return "0.1 < absolute error < 0.5 "
-    elif x >= 0.5 and x < 1:
-        return "0.5 < absolute error < 1 "
-    else:
-        return "absolute error > 1 "
-
-
-def create_dcc(possible_values, name, default_value):
-    return dcc.Dropdown(
-        id=name,
-        options=[{"label": c, "value": c} for c in possible_values],
-        value=default_value,
-    )
-
-
-def create_slider(name, mini, maxi, marks):
-    return dcc.Slider(
-        id=name,
-        min=mini,
-        max=maxi,
-        marks=marks,
-        value=0,
-        className="pretty_container",
-    )
-
-
-def create_radio_shape(name):
-    return dcc.RadioItems(
-        id=name,
-        options=[
-            {"label": "violin", "value": "violin"},
-            {"label": "box", "value": "box"},
-            {"label": "hist", "value": "histogram"},
-            {"label": "rug", "value": "rug"},
-        ],
-        value="histogram",
-        className="pretty_container",
-    )
-
-
-########################################## Dataframes and Models #####################################################################################
+# load the dataframe
 df = pd.read_csv("datasets_229906_491820_Fish.csv")
-encoded_df = pd.get_dummies(df, drop_first=True)
-encoded_df = encoded_df[
-    list(set(encoded_df.columns.tolist()) - set(["Width"])) + ["Width"]
-]
-
+encoded_df = re_order_dataset(df)
 X, y = encoded_df.iloc[:, :-1], encoded_df.iloc[:, -1]
 
 X_train, X_test, y_train, y_test = train_test_split(
     encoded_df.iloc[:, :-1], encoded_df.iloc[:, -1]
 )
-
-pipeline = Pipeline(
-    steps=[("normalize", MinMaxScaler()), ("model", LinearRegression())]
+# calculate necessary computations to run the data analysis, model performance and shap values
+dataframe_results, dataframe_absolute_error, y_pred = create_dataframe_results(
+    X, y, X_train, X_test, y_train, y_test
 )
 
-cv = KFold(n_splits=5, shuffle=True, random_state=1)
-scores = cross_val_score(
-    pipeline, X, y, scoring="neg_mean_squared_error", cv=cv, n_jobs=-1
-)
-scores = absolute(scores)
-s_mean = mean(scores)
+labels, values_pie = create_values_pie_chart(dataframe_absolute_error)
 
-pipeline.fit(X_train, y_train)
-y_pred = pipeline.predict(X_test)
-r2 = r2_score(y_test, y_pred)
-mse = mean_squared_error(y_test, y_pred)
-mae = mean_absolute_error(y_test, y_pred)
-dataframe_results = pd.DataFrame(
-    [[s_mean, r2, mse, mae]],
-    columns=[" mean crossval MSE", "R2 score", "MSE", "MAE"],
-)
-dataframe_absolute_error = pd.DataFrame(np.abs(y_test - y_pred))
-dataframe_absolute_error["intervals"] = dataframe_absolute_error.apply(
-    lambda x: intervals(x["Width"]), axis=1
-)
-labels = [
-    "absolute error < 0.1 ",
-    "0.1 < absolute error < 0.5 ",
-    "0.5 < absolute error < 1 ",
-    "absolute error > 1 ",
-]
-values = []
-for i in labels:
-    values.append(
-        len(
-            dataframe_absolute_error[
-                dataframe_absolute_error["intervals"] == i
-            ]
-        )
-    )
 y_test = pd.DataFrame(y_test).rename(columns={"Width": "y_test"})
 y_predicted = pd.DataFrame(y_pred, columns={"y_pred"})
 y_predicted.index = y_test.index
-error = pd.DataFrame(
-    y_test["y_test"] - y_predicted["y_pred"], columns=["error"]
-)
-error.index = y_test.index
-dataframe_error = pd.concat([error, y_test, y_predicted], 1)
 
-deviance, accuracy, AUC = REC(
-    dataframe_error["y_test"].values,
-    dataframe_error["y_pred"].values,
-    0,
-    3,
-    0.05,
-)
-d = {"Deviance": deviance, "Accuracy": accuracy}
-df_REC = pd.DataFrame(data=d)
-title_REC = "REC curve , AUC score=" + str(round(AUC, 3))
-
-model_GBT = GradientBoostingRegressor().fit(X_train, y_train)
-explainer = shap.TreeExplainer(model_GBT)
-shap_values = explainer.shap_values(X_train)
-dataframe_shap = pd.DataFrame(
-    shap_values,
-    columns=list(map(lambda x: x + "_shap", encoded_df.columns[:-1].tolist())),
-)
-dataframe_shap = dataframe_shap[
-    dataframe_shap.abs().sum().sort_values(ascending=False).index.tolist()
-]
-feature_importance = dataframe_shap.abs().sum().sort_values(ascending=False)
-feature_importance_name = feature_importance.index.tolist()
-feature_importance_value = feature_importance.values
-
-dataframe_shap.index = X_train.index
-temp_df = pd.concat([X_train, dataframe_shap], 1)
-liste_shap_features = list(
-    filter(lambda x: x.endswith("_shap"), temp_df.columns.tolist())
-)
+dataframe_error, df_REC, title_REC = create_REC_plot(y_test, y_predicted)
+(
+    model_GBT,
+    base_value,
+    explainer,
+    feature_importance_name,
+    feature_importance_value,
+    temp_df,
+    feature_importance_single_explanation_value,
+    sum_list,
+    title_single,
+    color,
+    liste_shap_features,
+) = create_explainer(X_train, X_test, y_train, encoded_df)
 
 
-dataframe_single_explanation = pd.DataFrame(
-    [explainer.shap_values(X_test.iloc[0, :])], columns=X_train.columns
-)
-
-sorted_importance = dataframe_single_explanation.iloc[0, :].sort_values(
-    ascending=False
-)
-feature_importance_single_explanation_name = sorted_importance.index.tolist()
-feature_importance_single_explanation_value = sorted_importance.values
-
-color = np.array(
-    ["rgb(255,255,255)"] * feature_importance_single_explanation_value.shape[0]
-)
-color[feature_importance_single_explanation_value < 0] = "Blue"
-color[feature_importance_single_explanation_value > 0] = "Crimson"
-
-list_ordered_values = X_test.iloc[0, :][
-    feature_importance_single_explanation_name
-].values
-
-sum_list = []
-for (item1, item2) in zip(
-    feature_importance_single_explanation_name, list_ordered_values
-):
-    sum_list.append(item1 + " = " + str(item2))
-
-base_value = str(round(model_GBT.predict(X_train).mean(), 2))
-predicted_value = str(
-    round(model_GBT.predict(np.array(X_test.iloc[0, :]).reshape(1, -1))[0], 2)
-)
-title_single = "Feature importance: Base value: {} , Predicted value: {}".format(
-    base_value, predicted_value
-)
-
-
-# liste_indexes = dataframe_error[(df_predictions['True']<20) & (df_predictions['predicted']>100)].index
-########################################## Plots of the beginning #######################################################################################
+# Plots at the initialization
 style_plot = {
     "border-radius": "5px",
     "background-color": "#f9f9f9",
     "box-shadow": "2px 2px 2px lightgrey",
     "margin": "10px",
 }
-fig1 = px.scatter(
-    df,
-    x=df.columns[0],
-    y=df.columns[0],
-    marginal_x="histogram",
-    marginal_y="histogram",
-    title=" Scatter plot",
-)
-fig1.update_layout(
-    paper_bgcolor="#f9f9f9",
-    title={"y": 0.9, "x": 0.5, "xanchor": "center", "yanchor": "top"},
-)
-fig2 = px.histogram(df, x=df.columns[0], title="Histogram plot")
-fig2.update_layout(
-    paper_bgcolor="#f9f9f9",
-    title={"y": 0.9, "x": 0.5, "xanchor": "center", "yanchor": "top"},
-)
-fig3 = px.density_heatmap(
-    df,
-    x=df.columns[0],
-    y=df.columns[0],
-    marginal_x="histogram",
-    marginal_y="histogram",
-    title="Density Heatmap plot",
-)
-fig3.update_layout(
-    paper_bgcolor="#f9f9f9",
-    title={"y": 0.9, "x": 0.5, "xanchor": "center", "yanchor": "top"},
-)
-fig4 = go.Figure(
-    data=[go.Pie(labels=labels, values=values, sort=False)],
-    layout={"title": "Pie chart for the absolute error"},
-)
-fig4.update_layout(
-    paper_bgcolor="#f9f9f9",
-    title={"y": 0.9, "x": 0.5, "xanchor": "center", "yanchor": "top"},
-)
-fig5 = px.scatter(
-    dataframe_error,
-    x="y_pred",
-    y="error",
-    title=" Scatter plot for the error and the prediction",
-)
-fig5.update_layout(
-    paper_bgcolor="#f9f9f9",
-    title={"y": 0.9, "x": 0.5, "xanchor": "center", "yanchor": "top"},
+fig1 = fig_1(df)
+fig2 = fig_2(df)
+fig3 = fig_3(df)
+fig4 = fig_4(labels, values_pie)
+fig5 = fig_5(dataframe_error)
+fig6 = fig_6(df_REC, title_REC)
+fig7 = fig_7(feature_importance_name, feature_importance_value)
+fig8 = fig_8(temp_df)
+fig9 = fig_9(
+    feature_importance_single_explanation_value, sum_list, color, title_single
 )
 
-fig6 = px.line(df_REC, x="Deviance", y="Accuracy", title=title_REC)
-fig6.update_layout(
-    paper_bgcolor="#f9f9f9",
-    title={"y": 0.9, "x": 0.5, "xanchor": "center", "yanchor": "top"},
-)
+# application layout
 
-fig7 = go.Figure(
-    [go.Bar(x=feature_importance_name, y=feature_importance_value)],
-    layout={"title": "Feature importance"},
-)
-fig7.update_layout(
-    paper_bgcolor="#f9f9f9",
-    title={"y": 0.9, "x": 0.5, "xanchor": "center", "yanchor": "top"},
-)
-
-fig8 = px.scatter(
-    temp_df,
-    x="Weight",
-    y="Weight_shap",
-    color="Weight",
-    title="SHAP dependence plot",
-)
-fig8.update_layout(
-    paper_bgcolor="#f9f9f9",
-    title={"y": 0.9, "x": 0.5, "xanchor": "center", "yanchor": "top"},
-)
-fig9 = go.Figure(
-    [
-        go.Bar(
-            x=feature_importance_single_explanation_value,
-            y=sum_list,
-            orientation="h",
-            marker_color=color,
-        )
-    ],
-    layout={"title": title_single},
-)
-fig9.update_layout(
-    paper_bgcolor="#f9f9f9",
-    title={"y": 0.9, "x": 0.5, "xanchor": "center", "yanchor": "top"},
-)
 app.layout = html.Div(
     style={"backgroundColor": "#F9F9F9"},
     children=[
