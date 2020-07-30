@@ -4,9 +4,6 @@ import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
 import pandas as pd
-import numpy as np
-import plotly.express as px
-import plotly.graph_objects as go
 from sklearn.model_selection import train_test_split
 
 from func_dash.func_dash import (
@@ -17,18 +14,17 @@ from func_dash.func_dash import (
     create_dataframe_results,
     create_values_pie_chart,
     create_REC_plot,
-    create_explainer,
+    shap_single_explanation,
+    create_explanations,
 )
 from func_dash.init_fig_dash import (
-    fig_1,
-    fig_2,
-    fig_3,
-    fig_4,
-    fig_5,
-    fig_6,
-    fig_7,
-    fig_8,
-    fig_9,
+    fig_scatter,
+    fig_hist,
+    fig_density_heatmap,
+    fig_pie,
+    fig_REC,
+    fig_bar_shap,
+    fig_force_plot,
 )
 
 # initialize the app
@@ -67,7 +63,7 @@ dataframe_error, df_REC, title_REC = create_REC_plot(y_test, y_predicted)
     title_single,
     color,
     liste_shap_features,
-) = create_explainer(X_train, X_test, y_train, encoded_df)
+) = create_explanations(X_train, X_test, y_train)
 
 
 # Plots at the initialization
@@ -77,15 +73,38 @@ style_plot = {
     "box-shadow": "2px 2px 2px lightgrey",
     "margin": "10px",
 }
-fig1 = fig_1(df)
-fig2 = fig_2(df)
-fig3 = fig_3(df)
-fig4 = fig_4(labels, values_pie)
-fig5 = fig_5(dataframe_error)
-fig6 = fig_6(df_REC, title_REC)
-fig7 = fig_7(feature_importance_name, feature_importance_value)
-fig8 = fig_8(temp_df)
-fig9 = fig_9(
+fig1 = fig_hist(df, df.columns[0], "Histogram plot for the features")
+
+fig2 = fig_scatter(
+    df,
+    df.columns[0],
+    df.columns[0],
+    "Scatter plot for features",
+    marginal_x="histogram",
+    marginal_y="histogram",
+)
+
+fig3 = fig_density_heatmap(
+    df,
+    df.columns[0],
+    df.columns[0],
+    "Density Heatmap plot",
+    marginal_x="histogram",
+    marginal_y="histogram",
+)
+fig4 = fig_pie(labels, values_pie, "Pie chart for the absolute error")
+fig5 = fig_scatter(
+    dataframe_error,
+    "y_pred",
+    "error",
+    "Scatter plot for the error and the prediction",
+)
+fig6 = fig_REC(df_REC, title_REC)
+fig7 = fig_bar_shap(feature_importance_name, feature_importance_value)
+fig8 = fig_scatter(
+    temp_df, "Weight", "Weight_shap", "SHAP dependence plot", color="Weight"
+)
+fig9 = fig_force_plot(
     feature_importance_single_explanation_value, sum_list, color, title_single
 )
 
@@ -188,7 +207,7 @@ app.layout = html.Div(
                                         ),
                                         dcc.Graph(
                                             id="histogram",
-                                            figure=fig2,
+                                            figure=fig1,
                                             style=style_plot,
                                         ),
                                     ]
@@ -275,7 +294,7 @@ app.layout = html.Div(
                                 ),
                                 dcc.Graph(
                                     id="scatter-plot",
-                                    figure=fig1,
+                                    figure=fig2,
                                     style=style_plot,
                                 ),
                             ],
@@ -520,23 +539,10 @@ app.layout = html.Div(
         ),
     ],
 )
-
-
-@app.callback(Output("error-scatter", "figure"), [Input("error_id", "value")])
-def plot_scatter_error(y_data):
-    figure = px.scatter(
-        dataframe_error,
-        x="y_pred",
-        y=y_data,
-        title="Scatter for the prediction",
-    )
-    figure.update_layout(
-        paper_bgcolor="#f9f9f9",
-        title={"y": 0.9, "x": 0.5, "xanchor": "center", "yanchor": "top"},
-    )
+@app.callback(Output("histogram", "figure"), [Input("value_histo", "value")])
+def plot_histogram(x_data):
+    figure = fig_hist(df, x_data, "Histogram plot")
     return figure
-
-
 @app.callback(
     Output("scatter-plot", "figure"),
     [
@@ -549,59 +555,45 @@ def plot_scatter_error(y_data):
 )
 def plot_scatter(x_data, y_data, x_radio, y_radio, slider2):
     if slider2 == 0:
-        figure = px.scatter(
+        figure = fig_scatter(
             df,
-            x=x_data,
-            y=y_data,
+            x_data,
+            y_data,
+            "Scatter plot",
             marginal_x=x_radio,
             marginal_y=y_radio,
-            log_x=False,
-            title=" Scatter plot",
         )
     else:
-        figure = px.scatter(
+        figure = fig_scatter(
             df,
-            x=x_data,
-            y=y_data,
+            x_data,
+            y_data,
+            "Scatter plot",
             marginal_x=x_radio,
             marginal_y=y_radio,
             color="Width",
-            log_x=False,
-            title=" Scatter plot",
         )
-    figure.update_layout(
-        paper_bgcolor="#f9f9f9",
-        title={"y": 0.9, "x": 0.5, "xanchor": "center", "yanchor": "top"},
-    )
     return figure
-
-
-@app.callback(Output("histogram", "figure"), [Input("value_histo", "value")])
-def plot_histogram(x_data):
-    figure = px.histogram(df, x=x_data, title="Histogram plot")
-    figure.update_layout(
-        paper_bgcolor="#f9f9f9",
-        title={"y": 0.9, "x": 0.5, "xanchor": "center", "yanchor": "top"},
-    )
-    return figure
-
 
 @app.callback(
     Output("2D_histo", "figure"),
     [Input("value_x_histo", "value"), Input("value_y_histo", "value")],
 )
 def plot_2D_histogram(value_x_histo, value_y_histo):
-    figure = px.density_heatmap(
+    figure = fig_density_heatmap(
         df,
-        x=value_x_histo,
-        y=value_y_histo,
+        value_x_histo,
+        value_y_histo,
+        "Density Heatmap plot",
         marginal_x="histogram",
         marginal_y="histogram",
-        title="Density Heatmap plot",
     )
-    figure.update_layout(
-        paper_bgcolor="#f9f9f9",
-        title={"y": 0.9, "x": 0.5, "xanchor": "center", "yanchor": "top"},
+    return figure
+
+@app.callback(Output("error-scatter", "figure"), [Input("error_id", "value")])
+def plot_scatter_error(y_data):
+    figure = fig_scatter(
+        dataframe_error, "y_pred", y_data, "Scatter for the prediction"
     )
     return figure
 
@@ -615,16 +607,12 @@ def plot_2D_histogram(value_x_histo, value_y_histo):
     ],
 )
 def plot_dependence_shap(id_shap_feature, id_feature1, id_feature2):
-    figure = px.scatter(
+    figure = fig_scatter(
         temp_df,
-        x=id_feature1,
-        y=id_shap_feature,
+        id_feature1,
+        id_shap_feature,
+        "SHAP dependence plot",
         color=id_feature2,
-        title="SHAP dependence plot",
-    )
-    figure.update_layout(
-        paper_bgcolor="#f9f9f9",
-        title={"y": 0.9, "x": 0.5, "xanchor": "center", "yanchor": "top"},
     )
     return figure
 
@@ -634,57 +622,19 @@ def plot_dependence_shap(id_shap_feature, id_feature1, id_feature2):
     [Input("explanation", "value")],
 )
 def plot_single_explanation(explanation):
-    dataframe_single_explanation = pd.DataFrame(
-        [explainer.shap_values(X_test.iloc[explanation, :])],
-        columns=X_train.columns,
+    (
+        feature_importance_single_explanation_value,
+        sum_list,
+        color,
+        title_single,
+    ) = shap_single_explanation(
+        explainer, X_test, explanation, model_GBT, base_value
     )
-    sorted_importance = dataframe_single_explanation.iloc[0, :].sort_values(
-        ascending=False
-    )
-    feature_importance_single_explanation_name = (
-        sorted_importance.index.tolist()
-    )
-    feature_importance_single_explanation_value = sorted_importance.values
-    color = np.array(
-        ["rgb(255,255,255)"]
-        * feature_importance_single_explanation_value.shape[0]
-    )
-    color[feature_importance_single_explanation_value < 0] = "Blue"
-    color[feature_importance_single_explanation_value > 0] = "Crimson"
-    list_ordered_values = X_test.iloc[explanation, :][
-        feature_importance_single_explanation_name
-    ].values
-    sum_list = []
-    for (item1, item2) in zip(
-        feature_importance_single_explanation_name, list_ordered_values
-    ):
-        sum_list.append(item1 + " = " + str(item2))
-    # base_value = str(round(model_GBT.predict(X_train).mean(),2))
-    predicted_value = str(
-        round(
-            model_GBT.predict(
-                np.array(X_test.iloc[explanation, :]).reshape(1, -1)
-            )[0],
-            2,
-        )
-    )
-    title_single = "Feature importance: Base value: {} , Predicted value: {}".format(
-        base_value, predicted_value
-    )
-    figure = go.Figure(
-        [
-            go.Bar(
-                x=feature_importance_single_explanation_value,
-                y=sum_list,
-                orientation="h",
-                marker_color=color,
-            )
-        ],
-        layout={"title": title_single},
-    )
-    figure.update_layout(
-        paper_bgcolor="#f9f9f9",
-        title={"y": 0.9, "x": 0.5, "xanchor": "center", "yanchor": "top"},
+    figure = fig_force_plot(
+        feature_importance_single_explanation_value,
+        sum_list,
+        color,
+        title_single,
     )
     return figure
 

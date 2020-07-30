@@ -3,6 +3,9 @@ import plotly.graph_objects as go
 
 
 def fig_update_layout(fig):
+    """
+    Update the figure with a specific layout
+    """
     fig.update_layout(
         paper_bgcolor="#f9f9f9",
         title={"y": 0.9, "x": 0.5, "xanchor": "center", "yanchor": "top"},
@@ -10,65 +13,85 @@ def fig_update_layout(fig):
     return fig
 
 
-def fig_1(df):
+def fig_scatter(
+    df, df_x, df_y, title, marginal_x=None, marginal_y=None, color=None
+):
+    """
+    Scatter plot for the first feature of the dataframe
+    """
     fig = px.scatter(
         df,
-        x=df.columns[0],
-        y=df.columns[0],
-        marginal_x="histogram",
-        marginal_y="histogram",
-        title=" Scatter plot",
+        x=df_x,
+        y=df_y,
+        marginal_x=marginal_x,
+        marginal_y=marginal_y,
+        title=title,
+        color=color,
     )
     fig = fig_update_layout(fig)
     return fig
 
 
-def fig_2(df):
-    fig = px.histogram(df, x=df.columns[0], title="Histogram plot")
+def fig_hist(df, df_x, title):
+    """
+    Histogram plot for the first feature of the dataframe
+    """
+    fig = px.histogram(df, x=df_x, title=title)
     fig = fig_update_layout(fig)
     return fig
 
 
-def fig_3(df):
+def fig_density_heatmap(
+    df, df_x, df_y, title, marginal_x=None, marginal_y=None
+):
+    """
+    Density heatmap for the first feature of the dataframe
+    """
     fig = px.density_heatmap(
         df,
-        x=df.columns[0],
-        y=df.columns[0],
-        marginal_x="histogram",
-        marginal_y="histogram",
-        title="Density Heatmap plot",
+        x=df_x,
+        y=df_y,
+        marginal_x=marginal_x,
+        marginal_y=marginal_y,
+        title=title,
     )
     fig = fig_update_layout(fig)
     return fig
 
 
-def fig_4(labels, values_pie):
+def fig_pie(labels, values_pie, title):
+    """
+    Pie chart for the labels and values of each label provided
+    """
     fig = go.Figure(
         data=[go.Pie(labels=labels, values=values_pie, sort=False)],
-        layout={"title": "Pie chart for the absolute error"},
+        layout={"title": title},
     )
     fig = fig_update_layout(fig)
     return fig
 
 
-def fig_5(dataframe_error):
-    fig = px.scatter(
-        dataframe_error,
-        x="y_pred",
-        y="error",
-        title=" Scatter plot for the error and the prediction",
-    )
+def fig_REC(df_REC, title_REC):
+    """
+    REC plot for the model chosen.
+
+    Arguments:
+    - df_REC : REC curve
+    - title_REC : title for the REC plot
+    """
+    fig = px.line(df_REC, x="Deviance", y="accuracy", title=title_REC)
     fig = fig_update_layout(fig)
     return fig
 
 
-def fig_6(df_REC, title_REC):
-    fig = px.line(df_REC, x="Deviance", y="Accuracy", title=title_REC)
-    fig = fig_update_layout(fig)
-    return fig
+def fig_bar_shap(feature_importance_name, feature_importance_value):
+    """
+    Global feature importane using shap values 
 
-
-def fig_7(feature_importance_name, feature_importance_value):
+    Arguments: 
+    - feature_importance_name : list containing the names of features
+    - feature_importance_value : list containing the values of importance of features
+    """
     fig = go.Figure(
         [go.Bar(x=feature_importance_name, y=feature_importance_value)],
         layout={"title": "Feature importance"},
@@ -77,19 +100,18 @@ def fig_7(feature_importance_name, feature_importance_value):
     return fig
 
 
-def fig_8(temp_df):
-    fig = px.scatter(
-        temp_df,
-        x="Weight",
-        y="Weight_shap",
-        color="Weight",
-        title="SHAP dependence plot",
-    )
-    fig = fig_update_layout(fig)
-    return fig
+def fig_force_plot(
+    feature_importance_single_explanation_value, sum_list, color, title_single
+):
+    """
+    Force plot for each value of X_test
 
-
-def fig_9(feature_importance_single_explanation_value, sum_list, color, title_single):
+    Arguments:
+    - feature_importance_single_explanation_value: sorted importance values for the features
+    - sum_list: list containing  strings of the name of each feature and its value 
+    - color: Blue for negative values and Crimson for the positive values 
+    - title_single : title of shap force plot
+    """
     fig = go.Figure(
         [
             go.Bar(
