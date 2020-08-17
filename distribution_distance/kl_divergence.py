@@ -40,10 +40,12 @@ def divide_density_to_intervals(
             for i in range(len(array) - 1)
         ]
     )
-    new_array2 = array2 / array2.sum()
+    if  np.all(array2==0):
+        new_array2 = np.where(array2 == 0, 0.000001, array2)
+    else:
+        new_array2 = array2 / array2.sum()
+        np.where(new_array2 == 0, 0.000001, new_array2)
     np.where(new_array1 == 0, 0.000001, new_array1)
-    np.where(new_array2 == 0, 0.000001, new_array2)
-
     return new_array1, new_array2
 
 
@@ -90,6 +92,7 @@ def plot_psi_values_dataset(df, percentage=0.66):
     """
     psi_bins = list()
     psi_quantiles = list()
+    df.index = list(range(len(df)))
     rows = round(len(df) * percentage)
     for column in df.columns:
 

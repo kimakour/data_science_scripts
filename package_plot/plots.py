@@ -26,10 +26,10 @@ def density_dataframe(
     plt.figure(
         num=None, figsize=figsize, dpi=100, facecolor="w", edgecolor="k"
     )
-    for i, name in enumerate(dataframe.columns[:-1]):
+    for i, name in enumerate(dataframe.columns):
         plt.subplot(number_rows, number_columns, i + 1)
         sns.distplot(dataframe[name], hist=hist_true_false, label=name)
-    plt.title("Density for the features")
+    plt.suptitle("Density for the features")
 
 
 # showing the proportion of a categorical feature by the values of another feature
