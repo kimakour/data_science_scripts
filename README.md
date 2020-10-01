@@ -15,6 +15,10 @@ A Python package to calculate KL divergence, PSI values and group entities with 
 A jupyter notebook is provided in the folder jupyter_notebooks for an example of using PSI values and group entities within a certain threshold.
 ![alt text](https://github.com/kimakour/data_science_scripts/blob/working_branch/images/psi_group.png)
 
+### jupyter_notebooks
+
+A list of notebooks including different modeling techniques, like ARIMA models , clustering for mixed data like K prototypes, mixed data distances like Gower distance and so on ...
+
 ### package_hp_opti
 A Python package to do hyper-parameter optimization : random search , grid search and bayesian optimization.
 
