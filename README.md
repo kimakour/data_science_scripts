@@ -2,7 +2,7 @@
 The project contains useful functions to build data pipelines, statistical metrics for data analysis and some visualizations tools.
 It is divided into the following parts :
 ### dashboard
-An of a dashboard build by using Dash from Plotly for the fish dataset. 
+An example of a dashboard build by using Dash from Plotly for the fish dataset. 
 It contains simple visualizations like histograms, scatter plots, heatmaps.
 ![alt text](https://github.com/kimakour/data_science_scripts/blob/master/images/dash_1.png)
 It contains also some modeling performances like a pie chart for the absolute error, a scatter for the error accoring to the prediction and a REC curve with AUC score.
