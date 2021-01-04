@@ -1,0 +1,2 @@
+A tutorial on how to use image degradation to assess how much a model is robust. 
+It is illustred with a dataset that can be found here : https://osf.io/4qrtv/?fbclid=IwAR06GmhQiYqF9kCqTCyUL9dReSXc0bGKCrt6piMSXW9Q7PK_EfGU9iPslwM 
